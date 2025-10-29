@@ -22,8 +22,7 @@ jobs:
         pip install -r requirements.txt
         python -m playwright install chromium
     - name: Run unit + integration tests
-      run: |
-        pytest -q
+      run: PYTHONPATH=$(pwd) pytest -q
     - name: Start server for e2e and run e2e tests
       run: |
         nohup uvicorn main:app --host 127.0.0.1 --port 8000 &
