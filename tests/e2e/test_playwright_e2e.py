@@ -1,9 +1,5 @@
 import time
 from playwright.sync_api import sync_playwright
-import sys, os
-
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-
 
 def test_e2e_calculation():
     with sync_playwright() as p:
