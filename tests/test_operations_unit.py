@@ -1,5 +1,8 @@
 import operations
 import pytest
+import sys, os
+
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 def test_add():
     assert operations.add(1,2) == 3
