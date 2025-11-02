@@ -1,4 +1,4 @@
-# FastAPI Calculator (Sample)
+# FastAPI Calculator
 
 This repository contains a simple FastAPI-based calculator with unit, integration, and Playwright end-to-end tests, plus a GitHub Actions workflow to run tests on push.
 
